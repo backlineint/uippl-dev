@@ -1,0 +1,4 @@
+header: Use Test
+body: This pattern proves that we can override default template discovery and specify a new template, even if it has a different name.
+ui_pattern_definition:
+  use: "@fakenamespace/test/path/different-template.twig"

@@ -1,0 +1,1 @@
+console.log("defaults_templates_json_test.js loaded");

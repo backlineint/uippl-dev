@@ -1,0 +1,17 @@
+example_field: This field won't be used, and this proves that additional fields won't impact the parsing of a pattern.
+image: https://placeimg.com/640/480/arch
+caption: This caption and the image above should be overriden by the ui_pattern_definition
+ui_pattern_definition:
+  label: Default Templates Pattern Defintion Test
+  description: This proves that pattern data in ui_patterns format can be parsed from the ui_pattern_definition section in a yaml file.
+  fields:
+    image:
+      type: image
+      label: Image
+      description: The description of this pattern
+      preview: https://placeimg.com/440/280/people
+    caption:
+      type: text
+      label: Caption
+      description: The caption
+      preview: Look! A person.

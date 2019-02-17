@@ -1,0 +1,1 @@
+console.log("defaults_templates_yaml_test.js loaded");

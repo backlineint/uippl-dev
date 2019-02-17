@@ -1,0 +1,1 @@
+feature: the module can discover fields in a pattern lab instance outside of the templates directory via a twig namespace defined in the theme.

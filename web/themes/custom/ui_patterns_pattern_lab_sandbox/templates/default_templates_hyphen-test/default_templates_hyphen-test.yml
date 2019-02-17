@@ -1,0 +1,3 @@
+example_field: example value
+ui_pattern_definition:
+  description: This pattern proves that patterns with hyphens in the name will be created.
