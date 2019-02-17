@@ -1,15 +1,19 @@
 #!/bin/bash
 
+git reset --hard HEAD
+
 lando start
+
+composer install
 
 lando drush si standard -y --db-url='mysql://drupal8:drupal8@database/drupal8' --site-name='UIPPL Dev' --account-name=admin --account-pass=admin
 
-# composer install UIPPL
+composer require 'drupal/ui_patterns_pattern_lab:1.x-dev'
 
-# Enable module, enable theme
+lando drush en -y components ui_patterns_pattern_lab components
 
-# Install required modules and themes
-# Todo - install with config instead.
+lando drush theme:enable -y ui_patterns_pattern_lab_sandbox
 
-# lando drush en -y components ui_patterns
+lando drush cset system.theme default ui_patterns_pattern_lab_sandbox -y
+
 
