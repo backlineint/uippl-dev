@@ -2,3 +2,9 @@ name: uippl-dev
 recipe: drupal8
 config:
   webroot: web
+tooling:
+  behat:
+    service: appserver
+    description: Run behat tests locally.
+    cmd:
+      - /app/vendor/bin/behat
