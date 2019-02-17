@@ -16,6 +16,8 @@ lando drush theme:enable -y ui_patterns_pattern_lab_sandbox
 
 lando drush cset system.theme default ui_patterns_pattern_lab_sandbox -y
 
+lando drush cr
+
 lando behat
 
 
